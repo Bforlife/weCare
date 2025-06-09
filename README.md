@@ -1,6 +1,6 @@
 # WeCare 🛒
 
-**WeCare** is an eCommerce web platform that connects users to buy foodstuffs from one state and have them delivered to another. It serves as a digital middleman ensuring smooth transactions, logistics, and convenience.
+**WeCare** is an eCommerce web platform that helps business ownwers sell their products online. It serves as a digital middleman ensuring smooth transactions, logistics, and convenience.
 
 ## 🌐 Live Demo
 
