@@ -46,3 +46,6 @@ Import the SQL file into your database
 Configure the database connection in your PHP files
 
 Launch the site in your browser
+Note: The file upload goes to a third party called cloudnary.com
+
+Made with 💙 by Mma's Code
