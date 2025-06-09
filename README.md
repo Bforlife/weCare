@@ -20,7 +20,7 @@ Coming Soon!!
 - **HTML**
 - **CSS**
 - **JavaScript**
-- ** Ajax**
+- **Ajax**
 - **PHP**
 - **MySQL**
 
