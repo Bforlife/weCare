@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+}
+        :root {
+            --primary-color: #3C2A21;
+            --secondary-color: #D5CEA3;
+            --background-color: #E5E5CB;
+            --accent-color: #1A120B;
+            --text-color: var(--accent-color);
+            --button-bg: var(--primary-color);
+            --button-text: #fff;
+            --price-color: #28a745;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+         
+        }
+
+        
+
+        .dashboard-content {
+            padding: 2rem;
+        } 
+
+        .card {
+            border: none;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* .btnCard {
+            background-color: var(--button-bg);
+            color: var(--button-text);
+            border: none;
+            
+        } */
+
+        .btnCard:hover {
+            background-color: var(--background-color);
+            color:var(--primary-color);
+            border: 1px solid #000;
+        }
+  

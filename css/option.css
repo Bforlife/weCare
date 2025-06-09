@@ -1,0 +1,44 @@
+    :root {
+      --primary-color: #3C2A21;
+      --secondary-color: #D5CEA3;
+      --background-color: #E5E5CB;
+      --accent-color: #1A120B;
+      --text-color: var(--accent-color);
+      --button-bg: var(--primary-color);
+      --button-text: #fff;
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      font-family: Arial, sans-serif;
+    }
+
+    h2{
+        color:var(--primary-color);
+    }
+    .fa-credit-card, .fa-building-columns{
+        font-size: 30px;
+    }
+
+    .payment-option {
+      background-color: var(--secondary-color);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .payment-option:hover {
+      transform: scale(1.02);
+    }
+
+    .btn-continue {
+      background-color: var(--button-bg);
+      color: var(--button-text);
+    }
+
+    .btn-continue:hover {
+      background-color: #2b1d16;
+    }

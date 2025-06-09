@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #3C2A21;
+    --secondary-color: #D5CEA3;
+    --background-color: #E5E5CB;
+    --accent-color: #1A120B;
+    --text-color: var(--accent-color);
+    --button-bg: var(--primary-color);
+    --button-text: #fff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Footer Styling */
+.infoFooter{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    color: white;
+}
+.footer {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--accent-color);
+}
+
+.footer h5 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    /* margin-bottom: 1rem; */
+}
+
+.footer .link {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .link:hover {
+    color:var(--secondary-color); 
+}
+
+.footer .social-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer .social-icon:hover {
+    color: var(--secondary-color);
+    transform: scale(1.2);
+}
+
+.footer .form-control {
+    border-radius: 0;
+    border: 1px solid var(--accent-color);
+}
+
+.footer .btn-warning {
+    background-color:var(--primary-color);
+    border: none;
+    transition: background-color 0.3s ease;
+    color: var(--button-text);
+}
+
+.footer .btn-warning:hover {
+    background-color:var(--secondary-color);
+}
+
+.footer hr {
+    border-top: 1px solid #fff;
+    margin: 1.5rem 0;
+}

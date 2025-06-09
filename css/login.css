@@ -1,0 +1,79 @@
+
+:root {
+    --primary-color: #3C2A21;
+    --secondary-color: #D5CEA3;
+    --background-color: #E5E5CB;
+    --accent-color: #1A120B;
+    --text-color: var(--accent-color);
+    --button-bg: var(--primary-color);
+    --button-text: #fff;
+    --border-color: #ccc;
+    --hover-bg: #4A3628;
+    --price-color: #28a745;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.login-card {
+    background: var(--secondary-color);
+    border: 1px solid #000;
+     text-align: center; 
+     margin:auto; margin-top:10rem;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+.login-card h3{
+    font-size: 30px;
+    color: var(--accent-color);
+}
+
+
+#email{
+    /* border: 1px solid var(--accent-color); */
+    width: 60%;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    height: 30px;
+}
+#email :focus{
+    outline: none;
+    border: none;
+}
+
+#password{
+    /* border: 1px solid var(--accent-color); */
+    border-radius: 4px;
+    width: 60%;
+    margin-bottom: 30px;
+    height: 30px;
+}
+#password :focus{
+    outline: none;
+    border: none;
+}
+.btn-custom {
+    padding-bottom: 20px;
+    background-color: var(--button-bg);
+    border: none;
+    color: var(--button-text);
+    width: 30%;
+    height: 30px;
+    font-size: 18px;
+}
+.btn-custom:hover {
+    background-color: var(--hover-bg);
+    margin-right: 10px;
+}
+.login-image {
+    max-width: 100px;
+}

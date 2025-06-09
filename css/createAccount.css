@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  :root {
+    --primary-color: #3C2A21;
+    --secondary-color: #D5CEA3;
+    --background-color: #E5E5CB;
+    --accent-color: #1A120B;
+    --text-color: var(--accent-color);
+    --button-bg: var(--primary-color);
+    --button-text: #fff;
+    --price-color: #28a745;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+    overflow: auto;
+  }
+  
+  .formClass {
+    background-color: var(--secondary-color);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .formClass label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    color: var(--primary-color);
+  }
+  
+  .formClass input,
+  .formClass select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .formClass input:focus,
+  .formClass select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(60, 42, 33, 0.3);
+  }
+  
+  #referral_source {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .formClass small {
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    height: 45px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #2b1d14;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .formClass {
+      padding: 20px;
+    }
+  
+    .formClass input,
+    .formClass select {
+      font-size: 14px;
+    }
+  }
+  

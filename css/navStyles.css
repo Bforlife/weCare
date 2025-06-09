@@ -1,0 +1,236 @@
+:root {
+    --primary-color: #3C2A21;
+    --secondary-color: #D5CEA3;
+    --background-color: #E5E5CB;
+    --accent-color: #1A120B;
+    --text-color: var(--accent-color);
+    --button-bg: var(--primary-color);
+    --button-text: #fff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.containerNav{
+    display: flex;
+    background-color: var(--primary-color);
+    
+}
+
+#navbarNav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.navbar-nav .nav-item a {
+    color: white; 
+    text-decoration: none;
+}
+
+.navbar-nav .nav-item a:active,
+.navbar-nav .nav-item a:focus {
+    color: white;
+    text-decoration: none;
+}
+.navbar-nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 60%;
+    position: relative;
+}
+.support{
+    display: flex;
+    gap: 50px;
+    margin-top: 18px;
+}
+
+.support .fa-cart-arrow-down{
+    font-size: 1.7rem;
+    color: var(--button-text);
+
+}
+.spanCount{
+    text-decoration: none;
+    position: absolute;
+    top: 40px;
+    font-size: 20px;
+    color: var(--button-text);
+}
+.support .fa-headset{
+    color: var(--button-text);
+    font-size: 1.7rem;
+}
+.support .fa-right-to-bracket{
+    font-size: 1.7rem;
+    color: var(--button-text);
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* style for input & btn */
+.navbar .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .form-control {
+    border-radius: 13px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    padding-right: 50px; 
+    margin-bottom: 20px;
+}
+
+.navbar .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    outline: none;
+}
+
+.navbar .btn-outline-success {
+
+    position: absolute;
+    right: 10px; 
+    top: 20px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: #D5CEA3;
+}
+
+/* dropdown */
+
+.dropdown-container {
+    display: none; 
+    position: absolute; 
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%; 
+    background-color: var(--background-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; 
+    z-index: 1000;
+    padding: 10px;
+    list-style: none;
+}
+.dropdown-item {
+    text-align: center;
+    padding: 10px 0; 
+    display: block; 
+    color: black;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(37, 34, 34); 
+    color: white; 
+}
+
+/* Menu Button */
+.menu-btn {
+    display: none;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-btn:focus {
+    outline: none;
+}
+
+.menu-btn:hover {
+    background-color: #2b1e17;
+}
+
+/* Show navigation links when menu is active */
+.navbar-nav.active {
+    display: flex;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+ 
+    .logoDiv{
+        color: white;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    #navbarNav {
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    /* .nav-links a { */
+        /* padding: 10px 0;
+        font-size: 16px;
+        color: var(--secondary-color);
+        border: 1px solid #000; */
+    /* } */
+
+    .navbar .search-container {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar .form-control {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .navbar .btn-outline-success {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+
+    .dropdown-container {
+        width: 90%;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar-nav.active {
+        display: flex;
+    }
+}

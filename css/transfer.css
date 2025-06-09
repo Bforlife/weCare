@@ -1,0 +1,31 @@
+    :root {
+      --primary-color: #3C2A21;
+      --secondary-color: #D5CEA3;
+      --background-color: #E5E5CB;
+      --accent-color: #1A120B;
+      --text-color: var(--accent-color);
+      --button-bg: var(--primary-color);
+      --button-text: #fff;
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background-color: var(--secondary-color);
+      border: none;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .btn-back {
+      background-color: var(--button-bg);
+      color: var(--button-text);
+    }
+
+    .btn-back:hover {
+      background-color: #2b1d16;
+    }

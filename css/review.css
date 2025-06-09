@@ -1,0 +1,143 @@
+
+:root {
+  --primary-color: #3C2A21;
+  --secondary-color: #D5CEA3;
+  --background-color: #E5E5CB;
+  --accent-color: #1A120B;
+  --text-color: var(--accent-color);
+  --button-bg: var(--primary-color);
+  --button-text: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.review-container {
+  background-color: var(--secondary-color);
+  padding: 30px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: var(--text-color);
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+}
+
+.stars input {
+  display: none;
+}
+
+.stars label {
+  font-size: 25px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+  color: gold;
+}
+
+textarea,
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  color: var(--text-color);
+}
+
+.upload-box {
+  border: 2px dashed var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+}
+
+.upload-box input {
+  display: none;
+}
+
+.upload-box label {
+  cursor: pointer;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.upload-box small {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #666;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2c1e17;
+}
+
+@media (max-width: 600px) {
+  .review-container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 15px;
+  }
+}
