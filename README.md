@@ -39,7 +39,7 @@ wecare/
 
 1. Clone the repository:
    ```bash
-  (Copy the link from the code section of my github)
+ https://github.com/Bforlife/weCare.git
    
 Import the SQL file into your database
 
